@@ -1,0 +1,20 @@
+            - name: security-DevOps-action
+  uses: microsoft/security-devops-action@v1.12.0
+  with:
+    # Deprecated, do not use.
+    command: # optional
+    # A file path to a .gdnconfig file.
+    config: # optional
+    # The name of the well-known policy to use. Defaults to GitHub.
+    policy: # optional, default is GitHub
+    # A comma-separated list of analyzer categories to run. Values secrets, code, artifacts, IaC, and containers. Example IaC, secrets. Defaults to all.
+    categories: # optional
+    # A comma-separated list of languages to analyze. Example javascript, typescript. Defaults to all.
+    languages: # optional
+    # A comma-separated list of analyzers to run. Examples are bandit, binskim, container-mapping, eslint, template analyzer, terrascan, and tryy.
+    tools: # optional
+    # Deprecated
+    include tools: # optional
+    # A SARIF filename that already exists. If it does, the normal run will not occur, and the file will be uploaded to the MSDO backend instead.
+    Existing filename # optional
+          
