@@ -1,0 +1,19 @@
+using UnityEngine;
+
+public class GameSettings : MonoBehaviour
+{
+    public float volume = 1f;
+    public int graphicsQuality = 2; // 0: Low, 1: Medium, 2: High
+
+    void Start()
+    {
+        ApplySettings();
+    }
+
+    public void ApplySettings()
+    {
+        AudioListener.volume = volume;
+        QualitySettings.SetQualityLevel(graphicsQuality);
+        Debug.Log("Settings applied.");
+    }
+}
